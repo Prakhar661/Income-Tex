@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Income Tax Calculator</h1>
+        <form id="tax-form">
+            <label for="income">Annual Income:</label>
+            <input type="number" id="income" name="income" placeholder="Enter your income" required>
+
+            <button type="submit">Calculate Tax</button>
+        </form>
+
+        <div id="result">
+            <h2>Tax Details</h2>
+            <p>Income: $<span id="income-amount">0</span></p>
+            <p>Tax: $<span id="tax-amount">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
